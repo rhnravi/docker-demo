@@ -1,4 +1,8 @@
 node {
+    environment {
+      registry = "rhnravi/docker-test"
+      registryCredential = 'dockerhub'
+   }
    def commit_id
    stage('Preparation') {
      checkout scm
